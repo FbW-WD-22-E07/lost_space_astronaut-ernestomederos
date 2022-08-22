@@ -11,21 +11,29 @@ body {
 #hero {
   height: 60vh;
   /* add Space_Transportation as background image */
+  background-image: url(./Space_Transportation.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
 }
 
 #hero-img {
   /* add position */
   /* and if you want transition effects */
+  width: 50%;
+  position: absolute;
+  right: 50px;
+  bottom: -60px;
+  transition: 1s;
+  
 }
 
 #hero:hover #hero-img {
-  /* animate size position and rotation */
+  
+    transform: scale(.5) translate(-40px, -150px) rotate(3turn);
+    opacity: 0;
 }
-
-/* comment above and uncomment bellow: why this doesn't work well?? */
-/* #hero-img:hover{
-    transform: scale(.3) translate(-50px, -250px) rotate(3turn);
-} */
 
 main {
     width: 90vw;
